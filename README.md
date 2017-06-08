@@ -10,3 +10,8 @@ Type node install to install node packages required for this project.
 Gulp commands:
 
 gulp watch - This starts the basic watch mode of your files.
+
+File structure:
+
+app/
+app/css/
