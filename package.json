@@ -1,0 +1,23 @@
+{
+  "name": "comfyweb",
+  "version": "1.0.0",
+  "description": "a simple website for comfy",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "browser-sync": "^2.18.8",
+    "gulp": "^3.9.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sfu-pflau/P02.git"
+  },
+  "author": "pflau",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sfu-pflau/P02/issues"
+  },
+  "homepage": "https://github.com/sfu-pflau/P02#readme"
+}
