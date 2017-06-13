@@ -90,7 +90,9 @@ li {
 /* Containers*/
 
 .container{
-  	min-height: 10px;
+  	max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .container:after, .container:before {
