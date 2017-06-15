@@ -376,11 +376,15 @@ form a{
 
 /* Page Breadcrumbs */
 /* NOTE grouping the two element selectors results in wierd behaviour of going across all divs on page...*/
-.breadcrumb
+.breadcrumb{
+  
+}
 
 .breadcrumb a{
   display: inline-block;
   line-height: 0.5;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .breadcrumb p{
   display: inline-block;
@@ -455,8 +459,8 @@ figure{
 }
 
 .product-example-img{
-  width:15rem;
-  height:15rem;
+  width:10rem;
+  height:10rem;
   background-color: grey;
 }
 
