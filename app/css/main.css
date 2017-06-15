@@ -374,6 +374,19 @@ form a{
   text-align: center;
 }
 
+/* Page Breadcrumbs */
+/* NOTE grouping the two element selectors results in wierd behaviour of going across all divs on page...*/
+.breadcrumb
+
+.breadcrumb a{
+  display: inline-block;
+  line-height: 0.5;
+}
+.breadcrumb p{
+  display: inline-block;
+  line-height: 0.5;
+}
+
 /* Product Listing*/
 
 .product-listing {
@@ -385,6 +398,29 @@ form a{
 	margin-bottom:0;
 	line-height: 0.5;
 	font-weight: 300;
+}
+
+.product-img-container{
+  padding-top: 1.25rem;
+  text-align: center;
+}
+
+.product-example-img{
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1rem;
+}
+
+.product-img-caption{
+  margin:0;
+}
+
+.product-img-price{
+  color: #A3B272;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 0;
+  margin-top: 0;
 }
 
 .cart-btn{
@@ -419,8 +455,8 @@ figure{
 }
 
 .product-example-img{
-  width:10rem;
-  height:10rem;
+  width:15rem;
+  height:15rem;
   background-color: grey;
 }
 
@@ -455,4 +491,8 @@ figure{
   border-bottom: .1rem solid #EEE;
   padding-bottom:  1rem;
   padding-top: 1.25rem;
+}
+
+h1.header{
+  margin-bottom: 0;
 }
