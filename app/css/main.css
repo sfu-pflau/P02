@@ -81,7 +81,14 @@ li {
 
 /* Containers*/
 
+/* This removes the top margin for the first element with the container class on each page*/
+/* UPDATE WORKS NOW 15/07/17 */
+.container:not(:nth-child(1)){
+  margin-top: 0;
+}
+
 .container{
+    margin-top:4rem;
   	max-width: 960px;
     margin-left: auto;
     margin-right: auto;
@@ -91,10 +98,10 @@ li {
 	clear:both;
 }
 
-/*.container .block:nth-of-type(even) {
+/*.container:nth-of-type(even) {
   	background-color: #333;
 }
-.container .block:nth-of-type(odd) {
+.container:nth-of-type(odd) {
   	background-color: #AAA;
 }*/
 
@@ -353,6 +360,7 @@ form a{
 }
 
 /* Testimonial containers*/
+
 .testimonial{
   /*display: block;*/
 }
@@ -408,6 +416,12 @@ figure{
 .product-img{
 	width: 150px;
 	height: 150px;
+}
+
+.product-example-img{
+  width:10rem;
+  height:10rem;
+  background-color: grey;
 }
 
 .smartphone-img{
