@@ -4,6 +4,22 @@
   width:100%;
 }
 
+/* Clearfix */
+
+[class*='col-']::after{
+  content:" ";
+  display:block;
+  clear:both;
+}
+
+/* Manual clearfix for containers */
+
+.clearfix:after {
+    content:" ";
+    display:block;
+    clear:both;
+}
+
 /* Desktop Grid */
 @media only screen and (min-width:768px){
   [class*='col-']{

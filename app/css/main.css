@@ -79,14 +79,6 @@ li {
 	text-decoration: none;
 }
 
-/* Clearfix */
-
-.clearfix:after {
-    content:" ";
-    display:block;
-    clear:both;
-}
-
 /* Containers*/
 
 .container{
@@ -99,15 +91,17 @@ li {
 	clear:both;
 }
 
-.container .block:nth-of-type(even) {
+/*.container .block:nth-of-type(even) {
   	background-color: #333;
 }
 .container .block:nth-of-type(odd) {
   	background-color: #AAA;
-}
+}*/
 
 .block {
 	display:inline-block;
+  /*padding-left: 2rem; dont need this for most blocks*/
+  padding-right: 2rem;
 }
 
 .style-item{
@@ -116,6 +110,12 @@ li {
 
 .palette-item {
 	display:inline-block;
+}
+
+.centered {
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
 }
 
 /* Button styles */
@@ -140,6 +140,28 @@ li {
     background-color: #A3B272;
     color: #F5FFD5;
 }
+
+/* header bar */
+.headerbar{
+  width: 100%;
+  height: 4rem;
+  background-color: #A3B272;
+  text-align: center;
+}
+
+.headerbar a{
+  transition-property: color;
+  transition-duration: 0.125s;
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+}
+
+.headerbar a:hover{
+  color:grey;
+}
+
+/* inputs */
 
 input[type="submit"] {
 	position: relative;
