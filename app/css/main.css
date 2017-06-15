@@ -147,6 +147,7 @@ li {
   height: 4rem;
   background-color: #A3B272;
   text-align: center;
+  padding-top: 1rem;
 }
 
 .headerbar a{
@@ -254,6 +255,11 @@ footer{
     transition-duration: 0.25s;
     background-color: #EFFFBC;
 }*/
+
+form a{
+  display: block;
+  margin-top: 0.5rem;
+}
 
 .navbar a {
     /*padding: 0.75rem;*/
@@ -429,4 +435,10 @@ figure{
   .hero-container{
     height: 30rem;
   }
+}
+
+.header {
+  border-bottom: .1rem solid #EEE;
+  padding-bottom:  1rem;
+  padding-top: 1.25rem;
 }
