@@ -267,6 +267,7 @@ footer{
   margin-left: auto;
   margin-right: auto;
   display:block;
+  border-radius: 50%;
 }
 
 /* Nav Elements*/
@@ -280,6 +281,7 @@ footer{
 }
 
 .navbar ul {
+
   justify-content: flex-end;
 	list-style-type: none;
 	margin: 0;
@@ -288,12 +290,16 @@ footer{
 }
 
 .navbar li {
-	display: line-block;
+	display: inline-block;
   padding-top:0.4rem;
   /*padding-bottom:0.1rem;*/
 	width:30%;
 	list-style: none;
 	text-align: center;
+  /* vertically align */
+  position: relative;
+  top: 50%;
+  transform: perspective(1px) translateY(-50%);
 }
 
 /* Removed at the moment as no background transition is needed */
@@ -372,9 +378,9 @@ form a{
 }
 
 .hero-img{
-  /*background-image: url("images/hero.jpg");*/
+  background-image: url("/images/hero.jpg");
   /* this is a placeholder for a full image later */
-  background-color: grey;
+  /*background-color: grey;*/
   height:100%;
   background-position: center;
   background-repeat: no-repeat;
@@ -389,6 +395,11 @@ form a{
   left: 50%;
   transform: translate(-50%,-50%);
   color: white;
+}
+
+.hero-text a{
+  color:white;
+  text-decoration: underline;
 }
 
 .hero-text h1{
