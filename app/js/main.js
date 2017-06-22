@@ -1,5 +1,6 @@
 // Configs and Variables
 var signinForm = document.getElementById("signin");
+var logoutBtn = document.getElementById("logout");
 
 // functions
 
@@ -24,7 +25,14 @@ function storeLogin(){
   // console.log("store");
   var username = document.getElementById("accountname").value;
   sessionStorage.setItem('username', username);
-  alert(username);
+  // alert(username);
+}
+
+function logout(){
+  // remove the sessionStorage username;
+  sessionStorage.clear();
+  // redirect as if a link click
+  window.location.href = "signin.html";
 }
 
 // Handlers
@@ -41,6 +49,16 @@ window.onload = function(){
     } else if (signinForm.attachEvent){
       // console.log("that loaded");
       signinForm.attachEvent('onsubmit', storeLogin); // Old broswer support
+    }
+  }
+
+  if (logoutBtn) {
+    if (logoutBtn.addEventListener){
+      // console.log("this loaded");
+      logoutBtn.addEventListener("click", logout, false); // modern browser support
+    } else if (logoutBtn.attachEvent){
+      // console.log("that loaded");
+      logoutBtn.attachEvent('click', logout); // Old broswer support
     }
   }
 

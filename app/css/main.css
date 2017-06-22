@@ -148,6 +148,12 @@ li {
     color: #F5FFD5;
 }
 
+.logout{
+  padding:0.35rem 0.75rem 0.35rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
 /* header bar */
 .headerbar{
   display: flex;
