@@ -265,17 +265,18 @@ footer{
 }
 
 .navbar ul {
-  justify-content: space-between;
+  justify-content: flex-end;
 	list-style-type: none;
-	margin:auto 0;
-	/*padding:0;*/
+	margin: 0;
+	padding:0;
+  width: 100%;
 }
 
 .navbar li {
-	display: line-flex;
-  /*padding-top:0.1rem;*/
-  padding-bottom:0.1rem;
-	width:auto;
+	display: line-block;
+  padding-top:0.4rem;
+  /*padding-bottom:0.1rem;*/
+	width:30%;
 	list-style: none;
 	text-align: center;
 }
@@ -387,21 +388,63 @@ form a{
 
 .testimonial{
   /*display: block;*/
+  margin-top:2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.testimonial-header{
+  margin-top: 4rem;
+  background-color:#A3B272;
+  width: 100%;
+  height: 5rem;
+  text-align: center;
+}
+
+/* http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/ */
+.testimonial-header-text{
+  position: relative;
+  top: 50%;
+  transform: perspective(1px) translateY(-50%);
+}
+
+.testimonial-header-text p{
+  color:white;
+  margin-top: 0;
+  font-size: 2.25rem;
+  font-weight: 700;
+  line-height: 1.25;
 }
 
 .testimonial-img{
-  height:200px;
-  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  height:100px;
+  width: 100px;
+  display: block;
+}
+
+.testimonial-box{
+  text-align: center;
 }
 
 .testimonial-text{
-  text-align: center;
+
+}
+
+.testimonial-name{
+  display: inline;
+  font-weight: 700;
+}
+
+.testimonial-customer{
+  display: inline;
 }
 
 /* Page Breadcrumbs */
 /* NOTE grouping the two element selectors results in wierd behaviour of going across all divs on page...*/
 .breadcrumb{
-  
+
 }
 
 .breadcrumb a{
@@ -415,7 +458,12 @@ form a{
   line-height: 0.5;
 }
 
-/* Product Listing*/
+/* Product preview */
+.product-preview{
+  margin-top:2rem;
+}
+
+/* Product Listing */
 
 .product-listing {
 	display: block;
