@@ -13,7 +13,7 @@ gulp.task('browser-sync', function (){
 // format your gulp watches but then calling on a change to the instance of browsersync PLEASE
 
 gulp.task('watch', ['browser-sync'], function(){
-  gulp.watch(['app/*.html','app/css/*.css']).on('change', browsersync.reload); // Should extend this to include css and any other directories
+  gulp.watch(['app/*.html','app/css/*.css','app/js/*.js']).on('change', browsersync.reload); // Should extend this to include css and any other directories
 });
 
 gulp.task('default', ['watch']);

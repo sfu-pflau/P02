@@ -9,15 +9,24 @@
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
   </head>
   <body>
-    <nav class="navbar">
-      <ul>
-        <li>
-          <a href="signin.html">sign in</a>
-        </li>
-        <li>
-          <a href="about.html">about comfy</a>
-        </li>
-      </ul>
+    <nav class="headerbar">
+      <div class="logo">
+        <img src="/images/logo.jpg">
+        <a href="index.html">comfy</a>
+      </div>
+      <div class="navbar">
+        <ul>
+          <li>
+            <a href="products.html">all product</a>
+          </li>
+          <li>
+            <a href="about.html">about comfy</a>
+          </li>
+          <li>
+            <a id="login" href="signin.html">sign in</a>
+          </li>
+        </ul>
+      </div>
     </nav>
     <div class="hero-container">
       <div class="hero-img">
@@ -60,37 +69,39 @@
         </div>
       </section>
     </div>
+    <div class="testimonial-header">
+      <div class="testimonial-header-text">
+        <p>
+          customer testimonials
+        </p>
+      </div>
+    </div>
     <div class="container clearfix">
-      <section class="testimonial col-3 ">
-        <section class="testimonial-text">
-          <!-- <img class"testimonial-img" /> -->
-          <p>
-            Lorem ipsum thingy about a custom reviewer - Customer
+      <section class="testimonial col-4 ">
+        <section class="testimonial-box">
+          <p class="testimonial-text">
+            Comfy helped me create the best present for my daughter's birthday. I got to make the exact pillow in thirty minutes instead of going out to search for it. Comfy lets you get exactly what you want.
           </p>
+          <img class="testimonial-img" src="images/customer1.jpg"/>
+          <p class="testimonial-name">Barbra Watts</p><p class="testimonial-customer"> - Calgary, AB</p>
         </section>
       </section>
-      <section class="testimonial col-3 ">
-        <section class="testimonial-text">
-          <!-- <img class"testimonial-img" /> -->
-          <p>
-            Lorem ipsum thingy about a custom reviewer - Customer
+      <section class="testimonial col-4 ">
+        <section class="testimonial-box">
+          <p class="testimonial-text">
+            My chair at work doesn't come with proper lumbar support. Using Comfy I got to make the exact back support pillow I needed to suit my needs. It even works with other chairs!
           </p>
+          <img class="testimonial-img" src="images/customer2.jpg"/>
+          <p class="testimonial-name">Tim Stockley</p><p class="testimonial-customer"> - Toronto, ON</p>
         </section>
       </section>
-      <section class="testimonial col-3 ">
-        <section class="testimonial-text">
-          <!-- <img class"testimonial-img" /> -->
-          <p>
-            Lorem ipsum thingy about a custom reviewer - Customer
+      <section class="testimonial col-4 ">
+        <section class="testimonial-box">
+          <p class="testimonial-text">
+            I really wanted to have a set of pillows that felt my own, as I have a hot head when I sleep and I needed a pillow that stayed cool and was easy to clean. Comfy gave me all the options to have a cool filling and a easy to clean cover.
           </p>
-        </section>
-      </section>
-      <section class="testimonial col-3 ">
-        <section class="testimonial-text">
-          <!-- <img class"testimonial-img" /> -->
-          <p>
-            Lorem ipsum thingy about a custom reviewer - Customer
-          </p>
+          <img class="testimonial-img" src="images/customer3.jpg"/>
+          <p class="testimonial-name">Ben Cunningham</p><p class="testimonial-customer"> - Vancouver, BC</p>
         </section>
       </section>
     </div>
@@ -100,5 +111,6 @@
         <p>things go here</p>
       </div>
     </footer>
+    <script src="/js/main.js"></script>
   </body>
 </html>
