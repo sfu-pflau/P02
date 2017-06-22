@@ -265,17 +265,18 @@ footer{
 }
 
 .navbar ul {
-  justify-content: space-between;
+  justify-content: flex-end;
 	list-style-type: none;
-	margin:auto 0;
-	/*padding:0;*/
+	margin: 0;
+	padding:0;
+  width: 100%;
 }
 
 .navbar li {
-	display: line-flex;
-  /*padding-top:0.1rem;*/
-  padding-bottom:0.1rem;
-	width:auto;
+	display: line-block;
+  padding-top:0.4rem;
+  /*padding-bottom:0.1rem;*/
+	width:30%;
 	list-style: none;
 	text-align: center;
 }
