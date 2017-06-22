@@ -1,0 +1,10 @@
+diff a/app/css/main.css b/app/css/main.css	(rejected hunks)
+@@ -150,7 +150,7 @@
+ 
+ /* header bar */
+ .headerbar{
+-  display: flex;
++  display: inline-flex;
+   width: 100%;
+   /*height: 4rem;*/
+   background-color: #A3B272;
