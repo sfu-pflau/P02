@@ -420,6 +420,17 @@ form a{
 .product-listing {
 	display: block;
 	text-align: center;
+  margin: 1rem;
+  padding: 1rem;
+  border: solid 1px #eee;
+  box-shadow: 1px 1px 3px #eee;
+  border-radius: 3px;
+
+}
+
+.product-listing h3 {
+  padding-top: 0;
+  margin: 0;
 }
 
 .product-listing p {
@@ -475,11 +486,16 @@ form a{
 
 figure{
   display:inline-block;
+  margin-bottom: 0;
+
 }
 
 .product-img{
 	width: 150px;
 	height: 150px;
+  border-radius: 3px;
+  border: solid 1px #eee;
+  /*box-shadow: 2px 2px 5px #ddd;*/
 }
 
 .product-example-img{
