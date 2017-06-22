@@ -260,6 +260,15 @@ footer{
   height:5rem;
 }
 
+/* about page */
+.about-img{
+  width: 200px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  display:block;
+}
+
 /* Nav Elements*/
 
 .navbar {
@@ -425,9 +434,11 @@ form a{
 .testimonial-img{
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 0.75rem;
   height:100px;
   width: 100px;
   display: block;
+  border-radius: 50%;
 }
 
 .testimonial-box{
