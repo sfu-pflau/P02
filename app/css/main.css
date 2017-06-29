@@ -109,6 +109,14 @@ li {
 	display:inline-block;
   /*padding-left: 2rem; dont need this for most blocks*/
   padding-right: 2rem;
+  height: 100px;
+}
+
+.block:nth-of-type(even){
+  background-color: #333;
+}
+.block:nth-of-type(odd){
+  background-color: #aaa;
 }
 
 .style-item{

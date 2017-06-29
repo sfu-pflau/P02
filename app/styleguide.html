@@ -1,26 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>Comfy - Custom Pillows</title>
     <link href="css/main.css" rel="stylesheet">
+    <link href="css/grids.css" rel="stylesheet">
+    <link href="/css/font-awesome.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
   </head>
   <body>
-    <nav class="navbar">
-      <ul>
-        <li>
-          <a href="wireframes.html">Wireframes</a>
-        </li>
-        <li>
-          <a href="citations.html">Citations</a>
-        </li>
-        <li>
-          <a href="sitemap.html">Sitemap</a>
-        </li>
-      </ul>
+    <nav class="headerbar">
+      <div class="logo">
+        <img src="/images/logo.jpg">
+        <a href="index.html">comfy</a>
+      </div>
+      <div class="navbar">
+        <ul>
+          <li>
+            <a href="wireframes.html">Wireframes</a>
+          </li>
+          <li>
+            <a href="citations.html">Citations</a>
+          </li>
+          <li>
+            <a href="sitemap.html">Sitemap</a>
+          </li>
+        </ul>
+      </div>
     </nav>
-    <section class="header">
+    <section class="header container">
       <p>
         Go to:
         <a href="#interactive_elements">Interactive Elements</a>,
@@ -126,40 +135,99 @@
 				<div class="style-item">
 					<h2>Main Navigation</h2>
 					<h3>Code:</h3>
-					<code>&lt;nav class=&quot;navbar&quot;&gt;</code><br/>
-					<code>&lt;ul&gt;</code><br/>
-					<code>&lt;li&gt;&lt;a href=&quot;/&quot;&gt;sign in&lt;/a&gt;&lt;/li&gt;</code><br/>
-					<code>&lt;li&gt;&lt;a href=&quot;/&quot;&gt;contact us&lt;/a&gt;&lt;/li&gt;</code><br/>
-					<code>&lt;/ul&gt;</code><br/>
-					<code>&lt;/nav&gt;</code><br/>
+          <code>
+          &lt;nav class=&quot;headerbar&quot;&gt; <br />
+            &lt;div class=&quot;logo&quot;&gt; <br />
+              &lt;img src=&quot;/images/logo.jpg&quot;&gt; <br />
+              &lt;a href=&quot;index.html&quot;&gt;comfy&lt;/a&gt;<br />
+            &lt;/div&gt; <br />
+            &lt;div class=&quot;navbar&quot;&gt; <br />
+              &lt;ul&gt; <br />
+                &lt;li&gt; <br />
+                  &lt;a href=&quot;products.html&quot;&gt;all product&lt;/a&gt; <br />
+                &lt;/li&gt; <br />
+                &lt;li&gt; <br />
+                  &lt;a href=&quot;about.html&quot;&gt;about comfy&lt;/a&gt; <br />
+                &lt;/li&gt; <br />
+                &lt;li&gt; <br />
+                  &lt;a id=&quot;login&quot; href=&quot;signin.html&quot;&gt;sign in&lt;/a&gt; <br />
+                &lt;/li&gt; <br />
+              &lt;/ul&gt; <br />
+            &lt;/div&gt; <br />
+          &lt;/nav&gt;
+          </code>
 					<h3>Rendered element:</h3>
-					<nav class="rendered-navbar">
-						<ul>
-							<li><a href="/">sign in</a></li>
-							<li><a href="/">contact us</a></li>
-						</ul>
-					</nav>
+          <nav class="headerbar">
+            <div class="logo">
+              <img src="/images/logo.jpg">
+              <a href="index.html">comfy</a>
+            </div>
+            <div class="navbar">
+              <ul>
+                <li>
+                  <a href="products.html">all product</a>
+                </li>
+                <li>
+                  <a href="about.html">about comfy</a>
+                </li>
+                <li>
+                  <a id="login" href="signin.html">sign in</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
 				</div>
 				<div class="style-item">
 					<h2>Product Listing</h2>
 					<h3>Code:</h3>
-					<code>&lt;div class=&quot;product-listing&quot;&gt;</code><br/>
-					<code>&lt;figure&gt;&lt;a href=&quot;images/watch/page_1.png&quot;&gt;&lt;img class=&quot;product-img&quot; src=&quot;images/watch/page_1.png&quot;/&gt;&lt;/a&gt;&lt;/figure&gt;</code><br/>
-					<code>&lt;h3&gt;A product&lt;/h3&gt;</code><br/>
-					<code>&lt;a href=&quot;/&quot; class=&quot;cart-btn&quot;&gt;Add to Cart&lt;/a&gt;</code><br/>
-					<code>&lt;p&gt;A price 1234&lt;/p&gt;</code><br/>
-					<code>&lt;p&gt;A longer description of the product&lt;/p&gt;</code><br/>
-					<code>&lt;/div&gt;</code><br/>
-					<code>&lt;/div&gt;</code><br/>
-					<h3>Rendered Product Listing:</h3>
-					<div class="product-listing">
-						<figure><a href="images/watch/page_1.png"><img class="product-img" src="images/watch/page_1.png"/></a></figure>
-						<h3>A product</h3>
-            <a href="/" class="cart-btn">Add to Cart</a>
-            <p>A price 1234</p>
-						<p>A longer description of the product</p>
-					</div>
+          <code>
+          &lt;section class=&quot;product-preview col-4&quot;&gt; <br />
+            &lt;div class=&quot;product-listing&quot;&gt;<br />
+              &lt;figure&gt;&lt;a href=&quot;product1.html&quot;&gt;&lt;img class=&quot;product-img&quot; src=&quot;images/pillow/12.jpg&quot;/&gt;&lt;/a&gt;&lt;/figure&gt;<br />
+              &lt;h3&gt;&lt;a href=&quot;product1.html&quot;&gt;A product&lt;/a&gt;&lt;/h3&gt;<br />
+              &lt;p&gt;A longer description of the product&lt;/p&gt;<br />
+              &lt;p&gt;A price 1234&lt;/p&gt;<br />
+              &lt;a href=&quot;product1.html&quot; class=&quot;cart-btn&quot;&gt;More about...&lt;/a&gt;<br />
+            &lt;/div&gt;<br />
+          &lt;/section&gt;<br />
+          </code>
+          <div class="container">
+            <section class="product-preview">
+              <div class="product-listing">
+                <figure><a href="product1.html"><img class="product-img" src="images/pillow/12.jpg"/></a></figure>
+                <h3><a href="product1.html">A product</a></h3>
+                <p>A longer description of the product</p>
+                <p>A price 1234</p>
+                <a href="product1.html" class="cart-btn">More about...</a>
+              </div>
+            </section>
+          </div>
 				</div>
+        <div class="style-item">
+          <h2>Testimonials</h2>
+          <h3>Code:</h3>
+          <code>
+            &lt;section class=&quot;testimonial col-4 &quot;&gt; <br />
+              &lt;section class=&quot;testimonial-box&quot;&gt;<br />
+                &lt;img class=&quot;testimonial-img&quot; src=&quot;images/people/3.jpg&quot;/&gt;<br />
+                &lt;p class=&quot;testimonial-name&quot;&gt;Ivy Cheung&lt;/p&gt;&lt;p class=&quot;testimonial-customer&quot;&gt; - Vancouver, BC&lt;/p&gt;<br />
+                &lt;p class=&quot;testimonial-text&quot;&gt;<br />
+                  I really wanted to have a set of pillows that felt my own, as I have a hot head when I sleep and I needed a pillow that stayed cool and was easy to clean. Comfy gave me all the options to have a cool filling and a easy to clean cover.<br />
+                &lt;/p&gt;<br />
+                &lt;/section&gt;<br />
+            &lt;/section&gt;<br />
+          </code>
+          <div class="container">
+            <section class="testimonial">
+              <section class="testimonial-box">
+                <img class="testimonial-img" src="images/people/3.jpg"/>
+                <p class="testimonial-name">Ivy Cheung</p><p class="testimonial-customer"> - Vancouver, BC</p>
+                <p class="testimonial-text">
+                  I really wanted to have a set of pillows that felt my own, as I have a hot head when I sleep and I needed a pillow that stayed cool and was easy to clean. Comfy gave me all the options to have a cool filling and a easy to clean cover.
+                </p>
+                </section>
+            </section>
+        </div>
 				<div class="style-item">
 					<h2>Website Grid</h2>
 					<h3>Code:</h3>
@@ -170,9 +238,9 @@
 					<code>&lt;/div&gt;</code><br/>
 					<h3>Rendered Website Grid:</h3>
 					<div class="container">
-					  <div class="block col-2"></div>
-					  <div class="block col-8"></div>
-					  <div class="block col-2"></div>
+					  <div class="block col-3"></div>
+					  <div class="block col-6"></div>
+					  <div class="block col-3"></div>
 					</div>
 				<div class="style-item">
 					<h2>Website Colour Swatch</h2>
