@@ -35,11 +35,14 @@ function logout(){
   window.location.href = "signin.html";
 }
 
+
 function windowLoad(){
   // console.log("click");
+
+  // on DOM load check login status
   checkLogin();
 
-  // add event listeners if the object is present
+  // add event listeners if the element is present on this page
   if (signinForm) {
     if (signinForm.addEventListener){
       // console.log("this loaded");
@@ -62,7 +65,5 @@ function windowLoad(){
 }
 
 // Handlers
-// on page load cehck login status
-
-console.log(document.readyState);
+// This checks on DOM content load so that it happens after all the content is loaded into memeory but before the window loads all the content
 document.addEventListener('DOMContentLoaded', windowLoad);
