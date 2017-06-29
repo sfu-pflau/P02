@@ -35,9 +35,7 @@ function logout(){
   window.location.href = "signin.html";
 }
 
-// Handlers
-// on page load cehck login status
-window.onload = function(){
+function windowLoad(){
   // console.log("click");
   checkLogin();
 
@@ -61,5 +59,10 @@ window.onload = function(){
       logoutBtn.attachEvent('click', logout); // Old broswer support
     }
   }
-
 }
+
+// Handlers
+// on page load cehck login status
+
+console.log(document.readyState);
+document.addEventListener('DOMContentLoaded', windowLoad);
