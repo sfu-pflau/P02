@@ -548,6 +548,21 @@ form a{
     color: white;
 }
 
+/* Order page */
+.order-list{
+  list-style-type: none;
+}
+
+.order-list h3{
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.order-list p{
+  line-height: 1.2;
+  margin-bottom:0.5rem;
+}
+
 figure{
   display:inline-block;
   margin-bottom: 0;
@@ -737,7 +752,7 @@ label{
   font-size: 1rem;
   padding: .2rem;
   margin: : .2rem;
-  margin-top: 1rem; 
+  margin-top: 1rem;
 }
 
 input[type=radio]{
