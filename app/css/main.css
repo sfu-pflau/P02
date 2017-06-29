@@ -369,7 +369,7 @@ form a{
 }
 
 .hero-img{
-  background-image: url("/images/hero.jpg");
+  background-image: url("../images/hero.jpg");
   /* this is a placeholder for a full image later */
   /*background-color: grey;*/
   height:100%;
