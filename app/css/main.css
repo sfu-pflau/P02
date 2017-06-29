@@ -369,7 +369,7 @@ form a{
 }
 
 .hero-img{
-  background-image: url("/images/hero.jpg");
+  background-image: url("../images/hero.jpg");
   /* this is a placeholder for a full image later */
   /*background-color: grey;*/
   height:100%;
@@ -497,12 +497,10 @@ form a{
 
 .product-listing p {
 	margin-bottom:0;
-	line-height: 1.2;
 	font-weight: 300;
 }
 
 .product-img-container{
-  padding-top: 1.25rem;
   text-align: center;
 }
 
@@ -522,6 +520,10 @@ form a{
   font-size: 2rem;
   margin-bottom: 0;
   margin-top: 0;
+}
+
+.product-price{
+  display: inline-block;
 }
 
 .cart-btn{
@@ -546,6 +548,21 @@ form a{
     color: white;
 }
 
+/* Order page */
+.order-list{
+  list-style-type: none;
+}
+
+.order-list h3{
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+}
+
+.order-list p{
+  line-height: 1.2;
+  margin-bottom:0.5rem;
+}
+
 figure{
   display:inline-block;
   margin-bottom: 0;
@@ -561,9 +578,9 @@ figure{
 }
 
 .product-example-img{
-  width:10rem;
+  /*width:10rem;
   height:10rem;
-  background-color: grey;
+  background-color: grey;*/
 }
 
 .smartphone-img{
@@ -662,6 +679,14 @@ footer h3{
   padding-right: 1rem;
 }
 
+.footer-links{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+	font-weight: 500;
+	text-align: center;
+	list-style: none;
+}
+
 .footer-copyright{
 	margin-top:1rem;
 	margin-bottom: 3rem;
@@ -735,7 +760,7 @@ label{
   font-size: 1rem;
   padding: .2rem;
   margin: : .2rem;
-  margin-top: 1rem; 
+  margin-top: 1rem;
 }
 
 input[type=radio]{
